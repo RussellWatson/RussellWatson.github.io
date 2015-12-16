@@ -23,16 +23,17 @@
     <a href="/" id="title"></a>
 	</h1>
 	</div>
-<div id="md" style="display: none;">
-<!-- markdown -->
+<p>
+    <sup id="fnref:1">
+        <a href="#fn:1" rel="footnote">1</a>
+    </sup>
+</p>
 
-<!-- markdown end -->
-</div>
-<div class="entry" id="main">
-<!-- content -->
-
-<!-- content end -->
-</div>
+<div class="footnotes"><ol>
+    <li class="footnote" id="fn:1">
+        <p>footnote.<a href="#fnref:1" title="return to article"> ↩</a><p>
+    </li>
+</ol></div>
 <br>
 <br>
     <div id="disqus_thread"></div>
@@ -96,9 +97,10 @@ $(document).ready(function() {
     });
 });
 </script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ["\\(", "\\)"]], processEscapes: true}});
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/bigfoot.js"></script>
+<script type="text/javascript">
+    $.bigfoot();
 </script>
 </body>
 </html>
