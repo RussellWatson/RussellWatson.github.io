@@ -28,7 +28,7 @@
 	</h1>
 	</div>
 <div style="text-align:center;font-size:3em;color:#098888">春夜喜雨</div>
-<div class="container" style="padding: 100px 50px 10px;" >
+<div class="container" style="text-align:center;padding: 100px 50px 10px;" >
    <button type="button" class="btn btn-default" title="left"  
       data-container="body" data-toggle="popover" data-placement="left" 
       data-content="好雨知时节，当春乃发生">
@@ -61,12 +61,20 @@
 		<p>© Copyright 2016 by russell, Designed by russell</p>
 	</div>
 </div>
-
-
-
-   <script>$(function () 
+<script>$(function () 
       { $("[data-toggle='popover']").popover();
       });
-   </script>
+</script>
+
+<script src="main.js"></script>
+<script id="content" type="text/mustache">
+    <h1>{{title}}</h1>
+    <div class="tag">
+    {{date}}
+    {{#tags}}
+    <a href="/#/tag/{{name}}">#{{name}}</a>
+    {{/tags}}
+    </div>
+</script>
 </body>
 </html>
